@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Virtual lab</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>Shakshat Virtual Lab <img src="images/iitg-logo1.jpg" style="width:125px;height:100px" align="right"/></h1> 
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h1>INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI</h1>
+	    </div><!--close welcome_slogan-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+
+	<div id="menubar">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourwork.html">About</a></li>
+        <li><a href="projects.html">People</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div><!--close menubar-->	
+	<br />
+	<br />
+	<div id="menu_sub">Blocked-Rotor Test</div>
+	<br />
+	<div id="menubar1">
+      <ul id="menu">
+	  <li><a href="Introduction_blockr.html">Introduction</a></li>
+        <li  class="current"><a href="Theory_blockr.html">Theory</a></li>
+        <li><a href="Procedure_blockr.html">Procedure</a></li>
+        <li><a href="Experiment_blockr.html">Experiment</a></li>
+	<li><a href="Solved_blockr.html">Sovled Examples</a></li>
+         <li><a href="Quiz_blockr.html">Quiz</a></li>
+		
+		      </ul>
+	  </br>
+	  <div id="content_handaxe">
+	  </br>
+	  <br>
+	 
+	  <p><h1 style="color:#990000">LIST OF SYMBOLS</h1></p>
+	  <p style="font-size:16px; font-family:Verdana, Arial, Helvetica, sans-serif"><em>f<sub>bl</sub></em> &nbsp;= &nbsp;rated electrical frequency of the motor</p>
+	  <p style="font-size:16px; font-family:Verdana, Arial, Helvetica, sans-serif">V<sub>1,<em>bl</sub></em>&nbsp;&nbsp; = &nbsp;&nbsp;the line-to-neutral voltage </p>
+	  <p style="font-size:16px; font-family:Verdana, Arial, Helvetica, sans-serif"><em>I</em><sub>1,<em>bl</sub></em>&nbsp;&nbsp; = &nbsp;&nbsp;the line current </p>
+	  <p style="font-size:16px; font-family:Verdana, Arial, Helvetica, sans-serif">P<em><sub>bl</sub></em> &nbsp;= &nbsp;the poly-phase electrical input power</p>
+	  <p style="font-size:16px; font-family:Verdana, Arial, Helvetica, sans-serif">S<em><sub>bl</sub></em> &nbsp;= &nbsp;total blocked rotor apparent power </p>
+	  <p style="font-size:16px; font-family:Verdana, Arial, Helvetica, sans-serif">Q<em><sub>bl</sub></em> &nbsp;= &nbsp; blocked rotor reactive power</p>
+	  <p style="font-size:16px;font-family:Verdana, Arial, Helvetica, sans-serif">X<em><sub>bl</sub></em> &nbsp;= &nbsp;blocked rotor reactance </p>
+	  <p style="font-size:16px;font-family:Verdana, Arial, Helvetica, sans-serif">Z<em><sub>bl</sub></em> &nbsp;= &nbsp;stator input impedence</p>
+	 
+	  <p><h1 style="color:#990000">THEORY</h1></p>
+	  <p style="font-size:16px">Like the short-circuit test on a transformer, the Blocked-Rotor test on an induction motor gives information with respect to the leakage impedances. The rotor is blocked so that it cannot rotate (hence the slip is equal to unity), and balanced polyphase voltages are applied to the stator terminals.
+	  </p>
+	  <p><img src="images/img1_blckr.jpg" width="850px" /></p>
+	  <p style="font-size:16px">In some cases, the blocked-rotor torque also is measured. The equivalent circuit for blocked-rotor conditions is identical to that of a short circuited transformer. An induction motor is more complicated than a transformer, however, because its leakage impedance may be affected by magnetic saturation of the leakage-flux paths and by rotor frequency. The blocked-rotor impedance may also be affected by rotor position, although this effect generally is small with squirrel-cage rotors. The guiding principle is that the blocked-rotor test should be performed under conditions for which the current and rotor frequency are approximately the same as those in the machine at the operating condition for which the performance is later to be calculated. For example, if one is interested in the characteristics at slips near unity, as in starting, the blocked-rotor test should be taken at normal frequency and with currents near the values encountered in starting. If, however, one is interested in normal running characteristics, the blocked-rotor test should be taken at a reduced voltage which results in approximately rated current; the frequency also should be reduced, since the values of rotor effective resistance and leakage inductance at the low rotor frequencies corresponding to small slips may differ appreciably from their values at normal frequency, particularly with double-cage or deep-bar rotors.</p>
+
+	  <p style="font-size:16px">The total leakage reactance at normal frequency can be obtained from this test value by considering the reactance to be proportional to frequency. The effects of frequency often are negligible for normal motors of less than 25-hp rating, and the blocked impedance can then be measured directly at normal frequency. The importance of maintaining test currents near their rated value stems from the fact that these leakage reactances are significantly affected by saturation. Based upon blocked-rotor measurements, the blocked-rotor reactance can be found from the blocked-rotor reactive power</p>
+	  <p><img src="images/img_blockr.png" style="margin-left:30%"/></p>
+	  <p style="font-size:16px">where <em>S<sub>bl</sub></em>= n<sub>ph</sub> V<em><sub>1,bl</sub></em> <em>I<sub>1,bl</sub></em></p>
+	  <p style="font-size:16px">is the total blocked-rotor apparent power. The blocked-rotor reactance, corrected to rated frequency, can then be calculated as</p>
+	  <p><img src="images/img1_blockr.png" style="margin-left:30%"/></p>
+	  <p style="font-size:16px"> The blocked-rotor resistance can be calculated from the blocked-rotor input power as</p>
+	  <p><img src="images/img2_blockr.png" style="margin-left:30%"/></p>
+	  <p style="font-size:16px">Once these parameters have been determined, the equivalent circuit parameters can be determined. Under blocked-rotor conditions, an expression for the stator input impedance can be obtained (with s = 1) as</p>
+	  <p><img src="images/img3_blockr.png" style="margin-left:30%"/></p>
+	  <p><img src="images/img4_blockr.png" style="margin-left:30%"/>
+	  </p>
+	  <p style="font-size:16px">Here we have assumed that the reactances are at their rated-frequency values. Making appropriate approximations (e.g., assuming ), </p>
+	  <p><img src="images/img5_blockr.png" style="margin-left:30%"/></p>
+	  <p style="font-size:16px">  Thus the apparent resistance under blocked-rotor conditions is given by</p>
+	  <p><img src="images/img6_blockr.png" style="margin-left:30%"/></p>
+	  <p style="font-size:16px">and the apparent rated-frequency blocked-rotor reactance by</p>
+	  <p><img src="images/img7_blockr.png" style="margin-left:30%"/></p>
+	  <p style="font-size:16px">The rotor leakage reactance X₂ and resistance R₂ can be found as</p>
+	  <p><img src="images/img8_blockr.png" style="margin-left:30%"/></p>
+
+	  <p style="font-size:16px">In order to achieve maximum accuracy as with the no-load test, if possible the value of the stator resistance should be corrected to the value corresponding to the temperature of the blocked-rotor test. Thus
+</p>
+	  <p><img src="images/img10_blockr.png" style="margin-left:30%"/></p>
+<p style="font-size:16px; align:justify;">Equation (xi) expresses the rotor leakage reactance X₂  in terms of the measured quantities X <sub>nl</sub> and X<sub>bl</sub> and the unknown stator leakage reactance X<sub>1</sub>. It is not possible to make an additional measurement from which X<sub>1</sub> and X<sub>2</sub>can be determined uniquely.Fortunately, the performance of the motor is affected relatively little by the way in which the total leakage reactance is distributed between the stator and rotor.  If the motor class is unknown, it is common to assume that X<sub>1</sub> and X<sub>2</sub> are equal.</p>
+	<p style="font-size:16px">Once the fractional relationship between X<sub>1</sub> and X<sub>2</sub> has been determined, X<sub>2</sub> (and hence X<sub>1</sub>) can be found in terms of X<sub>nl</sub> and X<sub>bl</sub> by solving the resultant quadratic equation. The magnetizing reactance X<sub>m</sub> can then be determined.</p>
+<p><img src="images/img9_blockr.png" style="margin-left:30%"/></p>
+<p style="font-size:16px"> Finally, using the known stator resistance and the values of X<sub>m</sub> and X<sub>2</sub> which are now known, the rotor resistance R<sub>2</sub> can now be determined .
+ </p>
+<p></p>
+	  </div>
+    </div><!--close menubar-->	
+	 <div id="footer">
+	  <a href="http://www.iitg.ernet.in">Copyright IIT GUWAHATI</a> | Developed By CSE DEPARTMENT 
+  </div><!--close footer-->  
+</body>
+</html>

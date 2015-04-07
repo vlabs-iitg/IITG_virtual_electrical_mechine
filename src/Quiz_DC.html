@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Virtual lab</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>Shakshat Virtual Lab <img src="images/iitg-logo1.jpg" style="width:125px;height:100px" align="right"/></h1> 
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h1>INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI</h1>
+	    </div><!--close welcome_slogan-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+
+	<div id="menubar">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ourwork.html">About</a></li>
+        <li><a href="projects.html">People</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div><!--close menubar-->	
+	<br />
+	<br />
+	<div id="menu_sub">The DC Test for Stator Resistance</div>
+	<br />
+	<div id="menubar1">
+      <ul id="menu">
+	  <li><a href="Introduction_DC.html">Introduction</a></li>
+        <li><a href="Theory_DC.html">Theory</a></li>
+        <li><a href="Procedure_DC.html">Procedure</a></li>
+        <li><a href="Experiment_DC.html">Experiment</a></li>
+         <li class="current"><a href="Quiz_DC.html">Quiz</a></li>
+		
+		      </ul>
+	  </br>
+	  <div id="content_handaxe">
+	  </br>
+	  <br>
+	 <form>
+	 <div>
+
+<label style="font-size:16px"><b>1) If Rac is the resistance measured by applying AC voltage and Rdc is resistance measure by applying DC voltage. Then which one of the following is true.</b></label><div id="log"></div>
+
+<p style="font-size:16px">
+<div style="font-size:16px">
+<input type="radio" name="q1" value="1" id="orange">
+<label for="orange">Rac > Rdc</label>
+</div>
+<div style="font-size:16px">
+<input type="radio" name="q1" value="2" id="apple">
+<label for="apple">Rac < Rdc</label>
+<div>
+<input type="radio" name="q1" value="3" id="banana">
+<label for="banana">Rac = Rdc</label>
+</div>
+<div style="font-size:16px">
+<input type="radio" name="q1" value="4" id="banana">
+<label for="banana">It depents on ac frequency.</label>
+</div>
+</p>
+<br/>
+<br/>
+
+
+
+
+<label style="font-size:16px"><b>2) As the slip increases, keeping all the parameters of the machine constant, the input current and the impedance</b></label><div id="log1"></div>
+
+<p style="font-size:16px">
+<div style="font-size:16px">
+<input type="radio" name="q2" value="1" id="orange">
+<label for="orange">increase, increase</label>
+</div>
+<div style="font-size:16px">
+<input type="radio" name="q2" value="2" id="apple">
+<label for="apple">increases, decreases</label>
+</div>
+<div style="font-size:16px">
+<input type="radio" name="q2" value="3" id="banana">
+<label for="banana">decrease, decrease</label>
+</div>
+<div style="font-size:16px">
+<input type="radio" name="q2" value="4" id="banana">
+<label for="banana">decrease, increase</label>
+</div>
+</p>
+<br/>
+<br/>
+<input type="button" id="submit" name="submit" value="submit">
+
+	 </form>
+	  </div>
+    </div><!--close menubar-->	
+	 <div id="footer">
+	  <a href="http://www.iitg.ernet.in">Copyright IIT GUWAHATI</a> | Developed By CSE DEPARTMENT 
+  </div><!--close footer-->  
+</body>
+<script>
+
+
+
+
+$( "#submit" ).click(function(){
+
+var ans1=$( "input[name=q1]:checked" ).val();
+
+var ans2=$( "input[name=q2]:checked" ).val();
+
+
+
+var answers = ["1","2"];
+
+
+
+if(ans1==answers[0]) {
+
+	/*$( "#log" ).html( ans1 + " is correct!" ); */
+	/*$('#log').addClass('right');*/
+	$( "#log" ).prepend('<img id="theImg" src="images/tick.gif.jpg" />');
+}
+else if(ans1!=answers[0])
+{
+   $( "#log" ).prepend('<img id="theImg" src="images/wrong.gif.jpg" />');
+}
+if(ans2==answers[1])
+{
+ /* $( "#log1" ).html( ans2 + " is correct!" ); */
+/* $('#log1').addClass('wrong');*/
+ $( "#log1" ).prepend('<img id="theImg" src="images/tick.gif.jpg" />');
+}
+else if(ans2!=answers[1])
+{
+  $( "#log1" ).prepend('<img id="theImg" src="images/wrong.gif.jpg" />');
+}
+
+});
+</script>
+
+
+</html>

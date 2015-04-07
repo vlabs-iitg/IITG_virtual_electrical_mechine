@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Auto Transformer Starting</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+</head>
+
+<style type="text/css">
+	.desc{
+		height: auto;
+	}
+</style>
+<body>
+<div id= "main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>Shakshat Virtual Lab <img src="images/iitg-logo1.jpg" style="width:125px;height:100px" align="right"/></h1> 
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h1>INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI</h1>
+	    </div><!--close welcome_slogan-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+
+	<div id="menubar">
+      <ul id="menu">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="ourwork.html">About</a></li>
+        <li><a href="projects.html">People</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div><!--close menubar-->	
+	<br />
+	<br />
+	  <div id= "content1">
+        <div class="content_item">
+		  <h1> &nbsp;&nbsp;Auto Transformer Starting</h1> 
+		  <br />
+		  
+		  <div class="heading">
+		   <ul> 
+			<li class="head1">
+		  	<a href="Auto Transformer Starting(intro).html"><img src="images/content_6.png" />
+			<h6>Introduction</h6>
+			</a></li>
+			<li class="head2">
+			<a href="Auto Transformer Starting(theory).html">
+			<img src="images/content_1.png" />
+			<h6>&nbsp;&nbsp;Theory</h6>
+			</a></li>
+			<li class="head3">
+			<a href="Auto Transformer Starting(procedure).html">
+			<img src="images/content_2.png" />
+			<h6>Procedure</h6>
+			</a></li>
+			<li class="head3">
+			<a href="Auto Transformer Starting(experiment).html">
+			<img src="images/content_4.png" />
+			<h6>Experiment</h6>
+			</a></li>
+			<li class="head1">
+		  	<a href="Auto Transformer Starting(quiz).html"><img src="images/content_94.png" />
+			<h6>&nbsp;&nbsp;&nbsp;Quiz</h6>
+			</a></li>
+		  </ul>
+		 </div>
+            <div class="divContent"><h2>&nbsp;</h2>
+                <div>
+
+                    <label>	1) In auto transformer starting of a squirrel-cage induction motor the stator voltage is reduced by a factor x(<1). Compared to direct online starting, the starting current and starting torque are reduced by the factors: starting current starting torque</label><div id="log"></div>
+
+                    <p>
+                    <div>
+                        <input type="radio" name="q1" value="1" id="ans1">
+                        <label for="ans1">x x</label></br>
+                        <input type="radio" name="q1" value="2" id="ans2">
+                        <label for="ans2">x x2</label></div>
+                    <input type="radio" name="q1" value="3" id="ans3">
+                    <label for="ans3">x2 x</label></br>
+                    <input type="radio" name="q1" value="4" id="ans4">
+                    <label for="ans4">x2 x2</label></br>
+                    </p>
+                    <br/>
+                    <label>	2)	As stator resistance increases, the slip at which maximum mechanical power and maximum torque occur</label><div id="log1"></div>
+
+                    <p>
+                    <div>
+                        <input type="radio" name="q2" value="1" id="ans1">
+                        <label for="ans1">	Increase, increase</label></br>
+                        <input type="radio" name="q2" value="2" id="ans2">
+                        <label for="ans2">Decrease, decrease</label></div>
+                    <input type="radio" name="q2" value="3" id="ans3">
+                    <label for="ans3">	Increase, decrease</label></br>
+                    <input type="radio" name="q2" value="4" id="ans4">
+                    <label for="ans4">Decrease, increase</label></br>
+                    </p>
+                    <br/>
+
+
+                    <br/>
+                    <br/>
+                    <input type="button" id="submit" name="submit" value="submit">
+
+                    </form>
+                </div>
+            </div><!--close menubar-->
+            <div id="footer">
+                <a href="http://www.iitg.ernet.in">Copyright IIT GUWAHATI</a> | Developed at IIT Guwahati
+            </div><!--close footer-->
+</body>
+<script>
+    $("#submit").click(function(){
+        var ans1=$( "input[name=q1]:checked" ).val();
+        var ans2=$( "input[name=q2]:checked" ).val();
+        var ans3=$( "input[name=q3]:checked" ).val();
+        var ans4=$( "input[name=q4]:checked" ).val();
+
+        var answers = ["4","2"];
+
+
+
+        if(ans1==answers[0]) {
+
+            $( "#log" ).prepend('<img id="theImg" src="images/tick.gif.jpg" />');
+        }
+        else if(ans1!=answers[0])
+        {
+            $( "#log" ).prepend('<img id="theImg" src="images/wrong.gif.jpg" />');
+        }
+
+        if(ans2==answers[1]) {
+
+            $( "#log1" ).prepend('<img id="theImg" src="images/tick.gif.jpg" />');
+        }
+        else if(ans2!=answers[1])
+        {
+            $( "#log1" ).prepend('<img id="theImg" src="images/wrong.gif.jpg" />');
+        }
+
+        if(ans3==answers[2]) {
+
+            $( "#log2" ).prepend('<img id="theImg" src="images/tick.gif.jpg" />');
+        }
+        else if(ans3!=answers[2])
+        {
+            $( "#log2" ).prepend('<img id="theImg" src="images/wrong.gif.jpg" />');
+        }
+
+        if(ans4==answers[3]) {
+
+            $( "#log3" ).prepend('<img id="theImg" src="images/tick.gif.jpg" />');
+        }
+        else if(ans4!=answers[3])
+        {
+            $( "#log3" ).prepend('<img id="theImg" src="images/wrong.gif.jpg" />');
+        }
+
+    });
+
+
+</script>
+
+</div>
+</div>
+</div>
+</div>
+<div align="center">
+</div>
+</div>
+</div>
+<div id="footer">
+    <a href="http://www.iitg.ernet.in">Copyright IIT GUWAHATI</a> | Developed By CSE DEPARTMENT
+</div><!--close footer-->
+</body>
+</html>
