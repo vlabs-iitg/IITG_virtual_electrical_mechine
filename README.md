@@ -1,0 +1,2 @@
+# IITG_virtual_electrical_mechine
+Electrical Machines Laboratory
